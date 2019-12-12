@@ -20,7 +20,7 @@ class Navbar extends Component {
 							return (
 								<nav style={{ background: theme.ui, color: theme.syntax }}>
 									<h1>Context App</h1>
-									<div>{isAuthenticated ? 'Logged in' : 'Logged out'}</div>
+									<div onClick={toggleAuth}>{isAuthenticated ? 'Logged in' : 'Logged out'}</div>
 									<ul>
 										<li>Home</li>
 										<li>About</li>
